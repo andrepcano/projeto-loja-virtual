@@ -1,0 +1,13 @@
+import React from 'react'
+
+const ContatoPage = () => {
+  return (
+    <>
+        <div>
+              <h1>Pagina de Contato</h1>
+        </div>
+    </>
+  )
+}
+
+export default ContatoPage
