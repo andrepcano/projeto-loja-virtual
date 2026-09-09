@@ -1,8 +1,9 @@
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import { Link } from "react-router"
 
-const Header = () => {
-    return(
+const Header = ({ adicionarCarrinho }) => {
+
+    return (
               <header className="header">
                 <div className="logo">🛍️ ReactShop</div>
         
@@ -12,14 +13,14 @@ const Header = () => {
                   <li><Link to ="/contato">Contato</Link></li>
                 </ul>
         
-                <div className="header-actions">
-          <span className="icon-button">
-            <FaMagnifyingGlass />
-          </span>
+                  <div className="header-actions">
+                  <span className="icon-button">
+                    <FaMagnifyingGlass />
+                  </span>
                   <span className="icon-button">❤️</span>
                   <span className="icon-button cart">
                     🛒
-                    <span className="badge">3</span>
+                    <span className="badge">{adicionarCarrinho}</span>
                   </span>
                 </div>
               </header>

@@ -1,6 +1,7 @@
 const Hero = (props) => {
     return (
         <section className="banner">
+            
             <div className="banner-text">
                 <h1>{props.titulo}</h1>
                 <p>{props.subtitulo}</p>
