@@ -11,7 +11,7 @@ import ProdutoPage from './pages/ProdutoPage.jsx';
 const router = createBrowserRouter([ // mapa de rotas
   {
     path: "/",
-    element: <App/>,
+    element: <App />,
   },
   {
     path: "/produtos",
@@ -26,6 +26,6 @@ const router = createBrowserRouter([ // mapa de rotas
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />,
-  </StrictMode>,
+    <RouterProvider router={router} />
+  </StrictMode>
 )
