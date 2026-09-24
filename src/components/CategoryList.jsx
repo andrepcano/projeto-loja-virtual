@@ -1,25 +1,29 @@
+import CategoryCard from "./CategoryCard"
+
 function CategoryList({ categories }) {
     return (
         <div className="category-list">
-            <div className="category-card">
-                <span className="category-icon">👕</span>
-                <p>Roupas</p>
-            </div>
 
-            <div className="category-card">
-                <span className="category-icon">📱</span>
-                <p>Eletrônicos</p>
-            </div>
+            <CategoryCard
+            emoji="👕"
+            name="Roupas"
+            />
 
-            <div className="category-card">
-                <span className="category-icon">👟</span>
-                <p>Calçados</p>
-            </div>
+            <CategoryCard
+            emoji="📱"
+            name="Eletrônicos"
+            />
 
-            <div className="category-card">
-                <span className="category-icon">🎒</span>
-                <p>Acessórios</p>
-            </div>
+            <CategoryCard
+            emoji="👟"
+            name="Calçados"
+            />
+
+            <CategoryCard
+            emoji="🎒"
+            name="Acessórios"
+            />
+
         </div>
     )
 }
